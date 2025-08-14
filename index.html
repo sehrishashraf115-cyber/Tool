@@ -270,8 +270,44 @@
             <p>Translate between 100+ languages with our AI-powered universal translator. Accurate, fast, and completely free to use.</p>
             <a href="/translator" class="cta-button" style="font-size: 1.2rem; padding: 0.8rem 2rem;">Start Translating</a>
             
-            <div class="translator-box">
-              Lang-translator.github.io
+           <div class="translator-box">
+    <div class="translation-app">
+        <div class="language-controls">
+            <select id="sourceLanguage">
+                <option value="auto">Auto Detect</option>
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <!-- other languages -->
+            </select>
+            <button id="swapLanguages">⇄</button>
+            <select id="targetLanguage">
+                <option value="es">Spanish</option>
+                <option value="en">English</option>
+                <!-- other languages -->
+            </select>
+        </div>
+        
+        <div class="translation-box">
+            <div class="input-section">
+                <textarea id="inputText" placeholder="Enter text..."></textarea>
+                <div class="text-actions">
+                    <button id="speakInput">🔊</button>
+                    <button id="clearInput">✕</button>
+                </div>
+            </div>
+            
+            <div class="output-section">
+                <div class="output-text" id="outputText"></div>
+                <div class="text-actions">
+                    <button id="speakOutput">🔊</button>
+                    <button id="copyOutput">⎘</button>
+                </div>
+            </div>
+        </div>
+        
+        <button id="translateBtn">Translate</button>
+    </div>
+</div>
                 <!-- This would be your actual translator component -->
                 <div style="padding: 2rem; text-align: center;">
                     <h3>Try Our Translator</h3>
